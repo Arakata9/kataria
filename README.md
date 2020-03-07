@@ -1,24 +1,14 @@
-# README
+# カタリア
+ネタバレありの
+レビューサイトを作成中...
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+見た作品をリスト化し、振り返れるようにする。
 
-Things you may want to cover:
+rails、jsで実装予定
 
-* Ruby version
+## 予定
+1.作品に対して、ユーザーそれぞれがレビューできるようにする
 
-* System dependencies
+2.作品それぞれにリアルタイム掲示板を作成する
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3.フレンド機能　友人同士で見た作品、気になっている作品をタイムラインで確認できるようにする

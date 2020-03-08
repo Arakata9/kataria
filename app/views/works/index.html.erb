@@ -1,16 +1,28 @@
-
-<div class="row justify-content-start mt-5 mx-5">
-  <% @works.each do |work| %>
-      <div class="border p-0 mt-3 mx-3 col-2">
-        <%= link_to work do %>
-          <img class="w-100" src="https://placehold.jp/260x364.png" alt="Card image cap">
-        <% end %>
-        <div class="">
-          <h5 class="ml-2 mt-2" ><%= work.title %></h5>
-          <p class=""></p>
+<section class="d-flex">
+  <div class="row offset-sm-1 col-sm-10 justify-content-start mt-5 p-0">
+    <% @works.each do |work| %>
+        <div class="border p-0 mt-3 mx-3 col-sm-2">
+          <%= link_to work do %>
+            <img class="w-100" src="https://placehold.jp/260x364.png" alt="Card image cap">
+          <% end %>
+          <div class="row m-0">
+            <div id="mystar" class="col-sm-3 p-0 bg-aaa d-flex align-items-center justify-content-center">
+              <i class="far fa-star fa-2x text-ddda "></i>
+            </div>
+            <div class="row col-sm-9 pr-0 w-100 m-0 p-0">
+              <div class="mt-1 ml-1 f075 w-100"><%= work.title %></div>
+              <div class="f07 mt-1">
+                <span class="mt-1 ml-1 text-warning">☆☆☆☆☆</span>
+                <span class="mt-1 ml-2 text-secondary">3.5</span>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            
+          </div>
         </div>
-      </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
+</section>
 
 

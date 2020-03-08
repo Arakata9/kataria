@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+ 
+ 
+ /*font-size*/
+ .f07{
+     font-size: 0.7rem;
+ }
+ .f075{
+     font-size: 0.75rem;
+ }
+ 
+ /*backgroud color*/
+ .bg-aaa{
+  background-color: #aaa;
+ }
+ 
+ /*color*/
+ .text-ddda{
+  color:#ddda;
+ }

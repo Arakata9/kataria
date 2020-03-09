@@ -1,28 +1,38 @@
+
 <section class="d-flex">
-  <div class="row offset-sm-1 col-sm-10 justify-content-start mt-5 p-0">
+  <div class="row offset-sm-2 col-sm-9 justify-content-start mt-5 p-0">
     <% @works.each do |work| %>
-        <div class="border p-0 mt-3 mx-3 col-sm-2">
+        <div class="border  p-0 mt-3 mx-3 col-sm-2">
           <%= link_to work do %>
             <img class="w-100" src="https://placehold.jp/260x364.png" alt="Card image cap">
           <% end %>
           <div class="row m-0">
-            <div id="mystar" class="col-sm-3 p-0 bg-aaa d-flex align-items-center justify-content-center">
-              <i class="far fa-star fa-2x text-ddda "></i>
+            <div id="mystar" class="col-sm-3 p-0 d-flex bgaaa align-items-center justify-content-center" @click="isActiveStar=!isActiveStar" :class='{bgyellow:isActiveStar}'>
+              <i class="far fa-star fa-2x text-fff8 "></i>
             </div>
-            <div class="row col-sm-9 pr-0 w-100 m-0 p-0">
-              <div class="mt-1 ml-1 f075 w-100"><%= work.title %></div>
-              <div class="f07 mt-1">
-                <span class="mt-1 ml-1 text-warning">☆☆☆☆☆</span>
-                <span class="mt-1 ml-2 text-secondary">3.5</span>
+            <div class="row col-sm-9 w-100 m-0 p-0">
+              <div class="mt-1 ml-1 f075 w-100 d-flex align-items-center h-36"><%= work.title %></div>
+              <div class="f065 mb-1">
+                <span class="ml-1 text-warning">☆☆☆☆☆</span>
+                <span class="ml-2 text-secondary">3.5</span>
               </div>
             </div>
           </div>
-          <div class="">
+          <div class="border-top pt-4">
             
           </div>
         </div>
     <% end %>
   </div>
 </section>
+
+<script>
+  new Vue({
+  el: "#mystar",
+  data: {
+    isActiveStar: false
+  }
+});
+</script>
 
 

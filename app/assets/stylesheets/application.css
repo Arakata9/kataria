@@ -16,6 +16,9 @@
  
  
  /*font-size*/
+ .f065{
+     font-size: 0.65rem;
+ }
  .f07{
      font-size: 0.7rem;
  }
@@ -24,11 +27,24 @@
  }
  
  /*backgroud color*/
- .bg-aaa{
+ .bgaaa{
   background-color: #aaa;
  }
  
+ .bgyellow{
+  background-color: #FFE42E;
+ }
+ 
  /*color*/
- .text-ddda{
-  color:#ddda;
+ .text-fff8{
+  color:#fff8;
+ }
+ 
+ .w-space{ 
+  white-space: nowrap;
+ }
+
+ /*height*/
+ .h-36{
+  height:36px;
  }

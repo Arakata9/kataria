@@ -1,29 +1,34 @@
 
 <section id="workbox" class="d-flex">
-  <div class="row offset-sm-2 col-sm-9 justify-content-start mt-5 p-0">
-    <% @works.each do |work| %>
-        <div class="border  p-0 mt-3 mx-3 col-sm-2">
-          <%= link_to work do %>
-            <img class="w-100" src="https://placehold.jp/260x364.png" alt="Card image cap">
-          <% end %>
-          <div class="row m-0">
-            <div class="col-sm-3 p-0 d-flex bgaaa align-items-center justify-content-center">
-            <!--<div class="col-sm-3 p-0 d-flex bgaaa align-items-center justify-content-center" @click="isActiveStar=!isActiveStar" :class='{bgyellow:isActiveStar}'>-->
-              <i class="far fa-star fa-2x text-fff8 "></i>
-            </div>
-            <div class="row col-sm-9 w-100 m-0 p-0">
-              <div class="mt-1 ml-1 f075 w-100 d-flex align-items-center h-36"><%= work.title %></div>
-              <div class="f065 mb-1">
-                <span class="ml-1 text-warning">☆☆☆☆☆</span>
-                <span class="ml-2 text-secondary"><%= work.rating %></span>
+  <div class="row offset-sm-2 col-sm-8 justify-content-start  p-0 bg-light rounded">
+      <% @works.each do |work| %>
+          <div class="p-0 mt-3 col-sm-3">
+            
+            <div class="border mx-3">
+              
+              <%= link_to work do %>
+                <img class="w-100" src="https://placehold.jp/260x364.png" alt="Card image cap">
+              <% end %>
+              <div class="row m-0">
+                <div class="col-sm-3 p-0 d-flex bgaaa align-items-center justify-content-center">
+                <!--<div class="col-sm-3 p-0 d-flex bgaaa align-items-center justify-content-center" @click="isActiveStar=!isActiveStar" :class='{bgyellow:isActiveStar}'>-->
+                  <i class="far fa-star fa-2x text-fff8 "></i>
+                </div>
+                <div class="row col-sm-9 w-100 m-0 p-0">
+                  <div class="mt-1 ml-1 f075 w-100 d-flex align-items-center h-36"><%= work.title %></div>
+                  <div class="f065 mb-1">
+                    <span class="ml-1 text-warning">☆☆☆☆☆</span>
+                    <span class="ml-2 text-secondary"><%= work.rating %></span>
+                  </div>
+                </div>
               </div>
+              <div class="border-top pt-4">
+              </div>
+            
             </div>
-          </div>
-          <div class="border-top pt-4">
             
           </div>
-        </div>
-    <% end %>
+      <% end %>
   </div>
 </section>
 

@@ -14,6 +14,10 @@
  *= require_self
  */
  
+ /*font-family*/
+ .fRoboto{
+  font-family: 'Roboto', sans-serif;
+ }
  
  /*font-size*/
  .f065{
@@ -35,10 +39,19 @@
   background-color: #F2D62A;
  }
  
+ .bg1F306E{
+  background-color:#299393;
+ }
+ 
+ .bgEFEFEF{
+  background-color: #EFEFEF;
+ }
+ 
  /*color*/
  .text-fff8{
   color:#fff8;
  }
+ 
  
  .w-space{ 
   white-space: nowrap;
